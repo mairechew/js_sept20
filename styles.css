@@ -1,0 +1,18 @@
+.grid {
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-container {
+  border: 2px solid black;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+}
