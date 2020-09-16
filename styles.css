@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+.logo {
+  padding: 12px;
+  height: 100px;
+  width: 200px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-container {
+  border: 2px solid black;
+  padding: 12px;
+  margin: 12px;
+  height: 100px;
+  display: flex;
+}
