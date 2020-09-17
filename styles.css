@@ -1,5 +1,11 @@
 .grid {
   display: grid;
+  grid-template-columns: 10% 1fr;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.list {
   grid-template-columns: 100px 1fr;
 }
 
@@ -14,25 +20,9 @@
   flex-direction: column;
 }
 
-.main > button {
-  background-color: lightblue;
-  height: 20px;
-  width: 100px;
-}
-
 .job-container {
-  border: 1px solid gray;
-  border-radius: 4px;
-  padding: 12px;
-  margin: 12px;
-  display: flex;
-  flex-direction: column;
-}
-
-.job-container:hover {
-  border: 2px solid peru;
-  cursor: pointer;
-}
-.company-header > img {
-  width: 100px;
+  border: 2px solid black;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
 }
