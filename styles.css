@@ -6,6 +6,16 @@
 }
 
 .list {
+  grid-template-columns: 100px 1fr;
+}
+
+.logo {
+  padding: 12px;
+  height: 100px;
+  width: 200px;
+}
+
+.main {
   display: flex;
   flex-direction: column;
 }

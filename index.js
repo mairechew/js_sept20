@@ -1,4 +1,4 @@
-const button = document.getElementById('button-default');
+const jobsButton = document.getElementById('get-jobs');
 
 // button is clicked - ✅
 // call fetch API on githubs jobs url - ✅
