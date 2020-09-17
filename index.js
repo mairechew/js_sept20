@@ -38,7 +38,7 @@ const jobsButton = document.getElementById('get-jobs');
 
 const listContainer = document.querySelector('.list');
 
-button.onclick = function click() {
+jobsButton.onclick = function click() {
   fetch(
     'https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=javascript&location=new+york'
   )
