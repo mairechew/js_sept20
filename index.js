@@ -1,5 +1,9 @@
 const jobsButton = document.getElementById('get-jobs');
 
+require(['env'], (env) => {
+  console.log('here are the env variables:', env)
+})
+
 // button is clicked - ✅
 // call fetch API on githubs jobs url - ✅
 // show loading state
