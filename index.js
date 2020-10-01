@@ -1,12 +1,5 @@
 const jobsButton = document.getElementById('get-jobs');
 
-// button is clicked - ✅
-// call fetch API on githubs jobs url - ✅
-// show loading state
-// validate response
-// parse
-// update UI to display data
-
 // [
 //   {
 //     "id": "569bfcdc-fad1-4563-ae57-8585831db596",
@@ -56,3 +49,77 @@ jobsButton.onclick = function click() {
     })
     .catch((error) => console.log('error: ', error));
 };
+
+// Sept 30.
+
+// create class & talk about features of a class
+// create instance of class
+// create subclass + extra features
+// conditionals & examples
+
+// camelCaseIsThis
+// snake_case
+// PascalCase
+
+// salary - long number
+// startDate - Date
+// relocation - boolean
+// jobTitle - string
+// fullTime / partTime - string
+// company - string
+// jobId - number
+// isActive - boolean
+
+const savedJobs = [];
+
+class Job {
+  constructor(
+    id,
+    type,
+    url,
+    createdAt,
+    company,
+    companyURL,
+    location,
+    title,
+    description = 'making so much money',
+    howToApply,
+    companyLogo
+  ) {
+    this.id = id;
+    this.type = type;
+    this.url = url;
+    this.createdAt = createdAt;
+    this.company = company;
+    this.companyURL = companyURL;
+    this.location = location;
+    this.title = title;
+    this.description = description;
+    this.howToApply = howToApply;
+    this.companyLogo = companyLogo;
+  }
+
+  apply() {
+    return `${this.howToApply} - click ${this.companyURL} to apply`;
+  }
+
+  share() {
+    return `${this.url} will lead you to ${this.title}`;
+  }
+
+  save() {
+    return savedJobs.push(this);
+  }
+}
+
+// Conditionals
+
+// if / ors
+
+// give me money
+
+// if (!title === 'CEO') {
+//   console.log(title)
+// } else {
+
+// }
